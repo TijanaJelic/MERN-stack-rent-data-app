@@ -9,6 +9,8 @@ What project contains:
 - Responsive design - works on mobile phones
 - Error alert message when data cannot be fetched, pushed, edited, or deleted
 
+https://user-images.githubusercontent.com/49621459/199493230-a45b8a7f-42e3-46f9-9681-313a3d335547.mp4
+
 ## Installation
 
 To run and edit the project follow the instructions below:

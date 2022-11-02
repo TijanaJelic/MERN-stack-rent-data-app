@@ -1,0 +1,55 @@
+@import '../../styles/colors.scss';
+@import '../../styles/mixins';
+
+.delete-modal {
+    @include modal-container-center;
+    position: fixed;
+
+    .delete-box {
+       @include modal-form;
+       max-width: 460px;
+
+       .close-modal {
+        @include close-modal-button ; 
+    }
+
+       .delete-question {
+         p {
+            &:nth-of-type(1) {
+                font-size: 22px;
+                font-weight: 600;
+                color: $dark-blue;
+                margin-bottom: 30px;
+            }
+
+            &:nth-of-type(2) {
+                margin-bottom: 40px;
+            }
+         }
+       }
+
+       .buttons {
+        text-align: right;
+        button {
+            font-weight: 600;
+            font-size: 16px;
+            border: none;
+            margin-left: 15px;
+            width: 80px;
+            height: 35px;
+            border-radius: 5px;
+
+            &:nth-of-type(1) {
+                color: $dark-gray;
+            }
+
+            &:nth-of-type(2) {
+                background-color: $red;
+                color: $white;
+            }
+        }
+
+            
+       }
+    }
+}

@@ -1,0 +1,38 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.add-new-data-modal {
+    @include modal-container-center;
+    position: fixed;
+
+    .add-new-data-box {
+
+        .add-new-data-form {
+            @include modal-form;
+            min-width: 320px;
+
+            .close-modal {
+                @include close-modal-button
+            }
+
+            p {
+                font-size: 22px;
+                font-weight: 600;
+                color: $dark-gray;
+                padding-bottom: 20px;
+            }
+            
+            .input-box {
+                @include input-box;
+
+                label {
+                    font-size: 14px;
+                }
+    
+                input {
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@mixin modal-container-center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin close-modal-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    font-size: 32px;
+    transform: rotate(45deg);
+    background-color: transparent;
+    border: none;
+}
+
+@mixin modal-form {
+    position: relative;
+    background-color: $white;
+    border-radius: 5px;
+    padding: 25px 15px;
+    border: 2px solid $medium-light-gray;
+}
+
+@mixin input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}

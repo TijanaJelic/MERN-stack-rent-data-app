@@ -21,7 +21,7 @@ app.use('/api/rentData', rentDataRoutes)
 mongoose.connect(process.env.RENTDATA_DB_URI)
     .then(() => {
         // listen for requests
-        app.listen(process.env.PORT, () => {
+        app.listen(process.env.PORT || 5000, () => {
         console.log(`Listening on port ${process.env.PORT}`)
     })
     })
